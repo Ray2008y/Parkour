@@ -1,18 +1,18 @@
-﻿#include <iostream>
+#include <iostream>
 #include <easy2d/easy2d.h>
 using namespace easy2d;
 
-int main(){
-	if (Game::init()){
+int main() {
+	if (Game::init()) {
 		std::cout << " Initialize the success!" << std::endl;
-		Window::setTitle(L"窗口名称");
-		Window::setSize(窗口x, 窗口y);
+		Logger::showConsole(false);//隐藏控制台
+		Window::setTitle(L"GAME");
+		Window::setSize(2000,1200);
 		//以下是游戏代码
 		
-
 		//以上是游戏代码
 		Game::start;
 	}
 	Game::destroy();
-    return 0;
+	return 0;
 }
